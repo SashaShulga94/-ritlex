@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Britlex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,34 +13,41 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
+    <header class="header-section">
+      <div class="container header-container">
       <a href="./index.html" class="logo"><span class="Brit">Brit</span>lex</a>
-      <nav>
+      <nav class="navigation">
         <ul class="menu-list">
           <li><a href="./index.html" class="link current">Home</a></li>
           <li><a href="#Skills" class="link">Skills</a></li>
           <li><a href="#AboutUs" class="link">About Us</a></li>
           <li><a href="#Pricings" class="link">Pricing</a></li>
-          <li><a href="#Contacts" class="link">Contacts</a></li>
+          <li><a href="#Contacts" class="link menu-list__contact">Contacts</a></li>
         </ul>
       </nav>
-      <!-- BTN!!! -->
-      <!-- <a href="#" class="email">Let’s Talk</a>
-   -->
+      <button type="button" class="header-btn">Let’s Talk</button>
     </header>
+    </div>
     <!-- HERO -->
-    <section class="hero-section">
-      <h1 class="hero-title">Learn Any Foreign Language</h1>
-      <img src="./images/bulb-icon.png" alt="grey bulb" />
+    <section class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero__left-side">
+          <div class="hero-title">
+      <h1 class="hero-title__text">Learn Any Foreign Language</h1>
+      <img src="./images/bulb-icon.png" alt="grey bulb" class="hero__img"/>
+      </div>
       <p class="hero-text">
         With our teachers who write a program for each student, you will be able
         to make your first sketch after the first lesson.
       </p>
       <button type="button" class="hero-btn">Get started</button>
+      </div>
       <img src="./images/learning-languages.png" alt="girl with headphone" />
+    </div>
     </section>
     <!-- skills -->
-    <section class="skills" id="Skills">
+    <section class="section skills" id="Skills">
+      <div class="container">
       <h2 class="skills-title">Skills</h2>
       <ul class="list">
         <li>
@@ -108,7 +116,7 @@
       </ul>
     </section>
     <!-- about us -->
-    <section class="about-us" id="AboutUs">
+    <section class="section bout-us" id="AboutUs">
       <h2 class="about-us-title">About Us</h2>
       <p class="about-us-text">
         The model offers a framework for discussing problems related to the
@@ -138,7 +146,7 @@
       class="about-us-foto">
       </section>
       <!-- pricig -->
-    <section class="pricing" id="Pricings">
+    <section class="section pricing" id="Pricings">
     <h2 class="pricing-title">Pricing</h2>
     <ul class="list">
       <li>
@@ -184,7 +192,7 @@
     </ul>
     </section>
     <!-- contact -->
-    <section class="contactus" id="Contacts">
+    <section class="section contactus" id="Contacts">
 <h2 class="contact-us-title">Contact Us</h2>
 <img src="./images/Group.png" alt="boy with paper a plant"
 width="390"
